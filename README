@@ -1,0 +1,11 @@
+This is a repo to hold my resume and curriculum vitae. I use a LaTeX template to
+generate PDFs for both. For resumes I have one for industry and one for academia
+and research. That's the only way to stay within one page and still fit in
+everything relevant. The CV is a more complete document. It uses a different
+format with more space because I'm not trying to fit within a space constraint.
+
+The templates are based on stuff I've found on the web. Credits are in the LaTeX
+files.
+
+I'll add an explanation of the various choices I've made and an HTML version
+soon.
