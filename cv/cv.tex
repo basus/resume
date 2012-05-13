@@ -1,0 +1,180 @@
+%!TEX TS-program = xelatex
+% Uses Curriculum Vitae template by Adrien Friggeri
+% https://github.com/afriggeri/cv/
+%
+%
+% Font And minor formatting changes by Shrutarshi Basu (2012)
+
+\documentclass[print]{cv}
+\addbibresource{bibliography.bib}
+
+\begin{document}
+\header{shrutarshi}{basu}
+       {programming languages and programmable systems}
+
+
+% In the aside, each new line forces a line break
+\begin{aside}
+  \section{contact}
+    Apt \#1, 220 North Quarry Street
+    Ithaca, NY 14850
+    ~
+    \href{mailto:shr@basus.me}{\hreffont shr@basus.me}
+    \href{http://basus.me}{\hreffont http://basus.me}
+  \section{programming}
+    C, C++, Java, Python
+    OCaml, Haskell
+    CSS3 \& HTML5
+  \section{tools}
+    Linux, OS X, \LaTeX,
+\end{aside}
+
+\section{research interests}
+
+    Programming languages, programmable systems and networks. \\
+    Hardware and software systems for concurrent and distributed computation 
+
+\section{education}
+
+\begin{entrylist}
+  \entry
+    {2011 - now}
+    {PhD in Computer Science}
+    {Cornell University}
+    {Applied Programming Languages and Programmable Networks}
+  \entry
+    {2007 - 2011}
+    {Dual Bachelors degree, \emph{Magna Cum Laude}}
+    {Lafayette College}
+    {B.S. in Electrical and Computer Engineering with Honors\\
+     B.A. in Computer Science with Honors}
+\end{entrylist}
+
+\section{honors and awards}
+
+\begin{entrylist}
+  \entry
+    {2011}
+    {J.J. Ebers Memorial Award}
+    {Lafayette College, ECE Dept.}
+    {Awarded for ``high academic achievement and noteworthy professional
+    interest in the field of electrical engineering.''}
+
+  \entry
+    {2010}
+    {Outstanding Research Award}
+    {Computer Research Association}
+    {{\it Honorable mention} for research in static analysis and computer generated art}
+
+  \entry
+    {2010}
+    {James P. Schwar Prize}
+    {Lafayette College, CS Dept.}
+    {Awarded to a computer science student on faculty nomination}
+
+  \entry
+    {2009}
+    {McClean Tau Beta Pi Engineering Prize}
+    {Lafayette College}
+    {Awarded to ``an engineering student who has excelled in academics and extracurricular activities''}
+
+  \entry
+    {2009 - 2011}
+    {Honor Society Memberships}
+    {}
+    {
+      Member of {\bf Tau Beta Pi} (Engineering),
+      {\bf Eta Kappa Nu} (Electrical and Computer Engineering)
+      and {\bf Upsilon Pi Epsilon} (Computer Science) Honor Societies}
+\end{entrylist}
+
+
+\section{experience}
+
+\begin{entrylist}
+  \entry
+    {2011 - 2012}
+    {Teaching Assistant}
+    {Cornell University}
+    {Graduate TA for courses in data structures and functional programming}
+  \entry
+    {05-08 2011}
+    {Software Engineering Intern}
+    {GrammaTech Inc}
+    {Performance improvements to the CodeSonar static analysis tool}
+  \entry
+    {06-12 2009}
+    {Computer Science Undergraduate Researcher}
+    {Virginia Tech}
+    {Researched dynamic program representations for use in blended analysis}
+  \entry
+    {2008 - 2009\\
+     2010 - 2011}
+    {EXCEL Research Scholar}
+    {Lafayette College}
+    {Researched the application of formal grammars to the generation of fractal patterns
+}
+  \entry
+    {2009 - 2011}
+    {Foreign Language Resource Center Technical Assistant}
+    {Lafayette College}
+    {Evaluated educational software and design web templates for foreign
+      language students. }
+
+  \entry
+    {2009 - 2011}
+    {IEEE Student Chapter President}
+    {Lafayette College}
+    {Organized activities and meetings with the help of professors,
+      administrators and industry contacts }
+
+  \entry
+    {2008 - 2010}
+    {Residence Advisor}
+    {Lafayette College}
+    {Organized activities for college residents and helped students access
+      college resources.}
+
+\end{entrylist}
+
+\section{projects}
+
+\begin{entrylist}
+  \entry
+    {2011}
+    {Freon: A novel network architecture}
+    {Cornell University}
+    {A novel architecture for datacenter network management using end hosts to
+      perform the majority of the packet processing work. A component of the
+      Frenetic project.}
+
+  \entry
+    {2011}
+    {Proctor: An Actor library for Ruby}
+    {Lafayette College}
+    {Threaded, concurrent Actors in Ruby using a prototype-based programming
+      style. Makes extensive use of Ruby's metaprogramming abilities}
+
+  \entry
+    {2010}
+    {WimpFi: Wireless Peer-to-peer Communications Network}
+    {Lafayette College}
+    {Allows personals computer to communicate via RF-transceivers implemented on
+      FPGAs. Implements a reduced version of the WiFi standard (IEEE 802.11g)
+      with collision avoidance and exponential backoff.}
+
+  \entry
+    {2008-2010}
+    {Metaphor: A declarative approach to computational art}
+    {Lafayette College}
+    {Software for visual artists to leverage computational tools. A declarative
+      programming language used as an interface to graphical libraries.}
+
+
+\end{entrylist}
+
+\section{publications}
+\printbibsection{inproceedings}{peer-reviewed conferences and proceedings}
+\printbibsection{misc}{other publications and presentations}
+
+\end{document}
