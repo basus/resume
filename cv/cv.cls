@@ -40,13 +40,13 @@
   \colorlet{red}{gray}
   \colorlet{blue}{gray}
   \colorlet{fillheader}{white}
-  \colorlet{header}{gray}
+  \colorlet{header}{black}
 \else
   \colorlet{fillheader}{gray}
   \colorlet{header}{white}
 \fi
 \colorlet{textcolor}{gray}
-\colorlet{headercolor}{gray}
+\colorlet{headercolor}{black}
 
 %%%%%%%%%
 % Fonts %
@@ -55,10 +55,10 @@
 \RequirePackage[quiet]{fontspec}
 \RequirePackage[math-style=TeX,vargreek-shape=unicode]{unicode-math}
 
-\newfontfamily\bodyfont[]{Yanone Kaffeesatz Bold}
-\newfontfamily\secfont[]{Helvetica Neue Condensed Bold}
-\newfontfamily\thinfont[]{Yanone Kaffeesatz Light}
-\newfontfamily\headingfont[]{Droid Serif Bold}
+\newfontfamily\bodyfont[]{Merriweather}
+\newfontfamily\secfont[]{Merriweather}
+\newfontfamily\thinfont[]{Merriweather Sans Book}
+\newfontfamily\headingfont[]{Merriweather}
 \newfontfamily\hreffont[]{Monaco}
 
 \defaultfontfeatures{Mapping=tex-text}
@@ -82,8 +82,8 @@
   \begin{tikzpicture}[remember picture,overlay]
     \node [rectangle, fill=fillheader, anchor=north, minimum width=\paperwidth, minimum height=3.5cm] (box) at (current page.north){};
     \node [anchor=center] (name) at (box) {%
-      \fontsize{40pt}{72pt}\color{header}%
-      {\bodyfont #1} \hspace{5pt} {\bodyfont  #2}
+    \fontsize{40pt}{72pt}\color{header}%
+      {\bodyfont #1 } \hspace{5pt} {\bodyfont  #2}
     };
     \node [anchor=north] at (name.south) {%
       \fontsize{14pt}{24pt}\color{header}%
